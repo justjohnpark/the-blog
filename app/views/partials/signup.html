@@ -18,7 +18,8 @@
                            required
                            autofocus
                            on-focus
-                           mongoose-error/>
+                           mongoose-error
+                           id="signup-email"/>
                     <p class="help-block"
                        ng-show="form.email.$error.email && !form.email.$focused">
                         Not a valid email.
@@ -42,7 +43,8 @@
                            ng-model="user.username"
                            required
                            unique-username
-                           mongoose-error/>
+                           mongoose-error
+                           id="signup-username"/>
                     <p class="help-block"
                        ng-show="form.username.$error.unique && form.username">
                         That username is already taken.
@@ -65,7 +67,8 @@
                            ng-model="user.password"
                            ng-minlength="5"
                            required
-                           mongoose-error/>
+                           mongoose-error
+                           id="signup-password"/>
                     <p class="help-block"
                        ng-show="(form.password.$error.minlength || form.password.$invalid)
                                 && form.password.$dirty
